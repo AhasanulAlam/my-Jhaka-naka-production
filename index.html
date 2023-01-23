@@ -7,11 +7,72 @@
     <title>My Jhaka Naka Production</title>
     <!-- Tailwind CSS CDN link -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS self Configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                yellow: '#FECC02',
+                black: '#131313',
+                gray: '#4E4E4E',
+              },
+              fontFamily:{
+                bebas : ['Bebas Neue', 'cursive'],
+                montserrat : ['Montserrat', 'sans-serif'],
+              },
+            },
+          },
+        };
+      </script>
 </head>
-<body>
-    <nav>
-        
+<body class="">
+    <!-- nav bar -->
+    <nav class="bg-white h-20 fixed top-0 right-0 left-0">
+        <div class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas px-5">
+            <h1 class="text-2xl">Jhaka Naka Production</h1>
+            <ul class="flex text-lg gap-8">
+                <li>About Us</li>
+                <li>Our Movies</li>
+                <li>Services</li>
+            </ul>
+        </div>
     </nav>
+
+    <!-- main header -->
+    <section class="bg-red-500 h-screen mt-20 bg-[url('images/banner.jpg')] bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+            <div class="font-bebas">
+                <h2 class="text-white text-lg">Movie production studio</h2>
+                <h1 class="text-7xl text-white">Films MAde to</h1>
+                <h1 class="text-7xl text-yellow">Perfection</h1>
+                <p class="font-montserrat text-white max-w-lg mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                
+                <button class="font-bebas border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section class="py-40">
+        <div class="border-2 border-black w-full max-w-7xl mx-auto">
+            <div class="p-5 lg:flex">
+                <div class="w-full lg:w-1/2 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center"></div>
+                <div class="w-full lg:w-1/2 p-5 font-bebas">
+                    <h2 class="text-lg">About Us</h2>
+                    <h1 class="text-7xl">FIlming Experience</h1>
+                    <h1 class="text-7xl">Just Got better</h1>
+                    <p class="font-montserrat mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eos aut eveniet repellendus fugit? Cupiditate neque sed repellendus voluptatum accusamus dolores est aut beatae repudiandae dolorum culpa, impedit voluptas hic, quas vel enim officiis, mollitia aliquid! Placeat facere veniam alias! A vitae dolorem nihil repellendus omnis. Commodi corrupti aspernatur eum.</p>
+                    <button class="font-bebas border-2 border-black py-2 px-3 text-black text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
