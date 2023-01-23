@@ -61,8 +61,10 @@
     <!-- About us -->
     <section class="py-40">
         <div class="border-2 border-black w-full max-w-7xl mx-auto">
-            <div class="p-5 lg:flex">
-                <div class="w-full lg:w-1/2 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center"></div>
+            <div class="p-5 mb-10 lg:flex">
+                <div class="w-full lg:w-1/2 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end">
+                    <h1 class="bg-white text-black text-2xl font-bebas w-full mx-10 text-center px-5 py-3 rounded-lg -mb-7 shadow-lg">23 YEARS of EXPERIENCE</h1>
+                </div>
                 <div class="w-full lg:w-1/2 p-5 font-bebas">
                     <h2 class="text-lg">About Us</h2>
                     <h1 class="text-7xl">FIlming Experience</h1>
@@ -89,7 +91,35 @@
                     <p class="text-lg font-montserrat">“We don't make movies to make money, we make money to make more movies.”</p>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!-- Our Movies -->
+    <section class="bg-gray py-20 px-5">
+        <div class="w-full max-w-7xl mx-auto mb-10">
+            <h2 class="font-bebas text-white">OUR MOVIES</h2>
+            <div class="flex justify-between items-center">
+                <h1 class="text-7xl text-white font-bebas">Movie collection</h1>
+                <button class="font-bebas border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">See More Movies</button>
+            </div>
+        </div>
+        <!-- movie cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 w-full max-w-7xl mx-auto gap-5">
+            <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                <div class="group transition-all bg-[url('images/inception.jpg')] h-full w-full bg-cover flex justify-center items-center">
+                    <h1 class="text-red-500 font-bebas text-4xl hidden group-hover:block">Inception</h1>
+                </div>
+            </div>
+            <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                <div class="bg-[url('images/fractured.jpg')] h-full w-full bg-cover"></div>
+            </div>
+            <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                <div class="bg-[url('images/interstellar.jpg')] h-full w-full bg-cover"></div>
+            </div>
+            <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                <div class="bg-[url('images/tenet.jpg')] h-full w-full bg-cover"></div>
+            </div>
+            
         </div>
     </section>
 
